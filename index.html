@@ -1,111 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <title> Desenvolvedor </title>
-        <link rel="stylesheet" href="./styles.css">
-    </head>
-    <body>
-        <header>
-            <nav class="container">
-                <div class="logo"> FA </div>
-                <ul class="nav-links">
-                    <li> <a href="#sobre"> Sobre </a> </li>
-                    <li> <a href="#skills"> Skills </a></li>
-                    <li> <a href="#projetos"> Projetos </a></li>
-                    <li> <a href="#contato"> Contato </a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="sobre" class="dev container fade-in">
-                <div class="dev-texto">
-                    <h1> Fábio Aurélio </h1>
-                    <p> Eu sou um desenvolvedor full-stack apaixonado, especializado em criar aplicações web bonitas e funcionais. </p>
-                    <a class="botao-de-contato" href="#contato"> Entre em contato </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvedor</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo"> FA </div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre" class="dev container fade-in">
+            <div class="dev-texto">
+                <h1>Fábio Aurélio</h1>
+                <p>Eu sou um desenvolvedor full-stack apaixonado, especializado em criar aplicações web bonitas e funcionais.</p>
+                <a class="botao-de-contato" href="#contato">Entre em contato</a>
+            </div>
+            <div class="dev-imagem">
+                <img src="/Logo.png" class="imagem-perfil">
+            </div>
+        </section>
+
+        <section id="skills" class="container fade-in">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon">&#128187;</div>
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, Typescript, React Native, Angular</p>
                 </div>
-                <div class="dev-imagem">
-                    <img src="/Logo.png" class="imagem-perfil">
+                <div class="skill-item">
+                    <div class="skill-icon">&#128295;</div>
+                    <h3>Backend</h3>
+                    <p>Node.js, PHP, Python</p>
                 </div>
-            </section>
-
-            <section id="skills" class="container fade-in">
-                <h2> Skills </h2>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <div class="skill-icon">&#128187;</div>
-                        <h3> Frontend </h3>
-                        <p> HTML, CSS, Typescrip, React Native, Angular </p>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">&#128295;</div>
-                        <h3> Backend </h3>
-                        <p> Node.js, PHP, Python </p>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">&#128202;</div>
-                        <h3> Banco de dados </h3>
-                        <p>MySQL </p>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">&#128736;</div>
-                        <h3> Ferramentas </h3>
-                        <p> Git </p>
-                    </div>
+                <div class="skill-item">
+                    <div class="skill-icon">&#128202;</div>
+                    <h3>Banco de dados</h3>
+                    <p>MySQL</p>
                 </div>
-            </section>
+                <div class="skill-item">
+                    <div class="skill-icon">&#128736;</div>
+                    <h3>Ferramentas</h3>
+                    <p>Git</p>
+                </div>
+            </div>
+        </section>
 
-            <section id="projetos" class="container fade-in">
-                <h2> Projetos </h2>
-                <div class="projetos-grid">
-                    <div class="projeto-card"> 
-                        <h3 class="titulo-projeto"> Seu Inventario</h3>
-                        <p>É um app em React Native que ajuda pequenos empreendedores a exibir produtos de forma organizada e atrativa, como um catálogo digital. Sem opções de compra e venda, o app permite cadastrar itens com nome, preço, imagem e categoria, além de compartilhar produtos facilmente em redes sociais. Com login via número de celular. </p>
-                        <div class="projeto-tags">
-                            <span> React Native </span>
-                            <span> PHP </span>
-                            <span> MySQL </span>
-                        </div>
-                    </div>
-                    <div class="projeto-card">
-                        <h3 class="titulo-projeto"> Monitoramento de humorAPP </h3>
-                        <p> Uma aplicação de produtividade pra gerenciar tarefas e projetos com atualizações em tempo real e recursos de colaboração de equipes </p>
-                        <div  class="projeto-tags">
-                            <span> Angular </span>
-                            <span> Ionic </span>
-
-
-                        </div>
-
-                    </div>
-                    <div class="projeto-card">
-                        <h3 class="titulo-projeto"> Calculadoras em C++ </h3>
-                        <p> Atividades feitas na faculdade usando operações matematicas  </p>
-                        <div class="projeto-tags">
-                            <span> C++ </span>
-                            
-                        </div>
+        <section id="projetos" class="container fade-in">
+            <h2>Projetos</h2>
+            <div class="projetos-grid">
+                <div class="projeto-card">
+                    <h3 class="titulo-projeto">Seu Inventário</h3>
+                    <p>É um app em React Native que ajuda pequenos empreendedores a exibir produtos de forma organizada e atrativa, como um catálogo digital. Sem opções de compra e venda, o app permite cadastrar itens com nome, preço, imagem e categoria, além de compartilhar produtos facilmente em redes sociais. Com login via número de celular.</p>
+                    <div class="projeto-tags">
+                        <span>React Native</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
                     </div>
                 </div>
-            </section>
+                <div class="projeto-card">
+                    <h3 class="titulo-projeto">Monitoramento de HumorAPP</h3>
+                    <p>Uma aplicação de produtividade pra gerenciar tarefas e projetos com atualizações em tempo real e recursos de colaboração de equipes.</p>
+                    <div class="projeto-tags">
+                        <span>Angular</span>
+                        <span>Ionic</span>
+                    </div>
+                </div>
+                <div class="projeto-card">
+                    <h3 class="titulo-projeto">Calculadoras em C++</h3>
+                    <p>Atividades feitas na faculdade usando operações matemáticas.</p>
+                    <div class="projeto-tags">
+                        <span>C++</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <section id="contato" class="contato fade-in">
-                <h2 class="titulo-contato"> Contate-me! </h2>
-                <form class="contato-form">
-                    <div class="grupo-formulario">
-                        <label for="nome"> Nome </label>
-                        <input id="nome" name="nome" required>
-                    </div>
-                    <div class="grupo-formulario">
-                        <label for="email"> Email </label>
-                        <input id="email" name="email" required>
-                    </div>
-                    <div class="grupo-formulario">
-                        <label for="mensagem"> Mensagem </label>
-                        <textarea id="mensagem" name="mensagem" required> </textarea>
-                    </div>
-                    <button type="submit"> Mandar mensagem</button>
-                </form>
-            </section>
-        </main>
-    </body>
+        <section id="contato" class="contato fade-in">
+            <h2 class="titulo-contato">Contate-me!</h2>
+            <form class="contato-form">
+            </form>
+            <div class="contato-icones">
+                <a href="https://linkedin.com/in/fabio-azevedo-8b7407241" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/fabioazevedo26" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="tel:+559298848-6592"><i class="fas fa-phone"></i> +55 92 98848-6592</a>
+            </div>
+        </section>
+    </main>
+</body>
 </html>

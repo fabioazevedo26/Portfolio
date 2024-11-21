@@ -1,9 +1,9 @@
+/* Reset e variáveis */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 :root {
     --cor-de-fundo: #f0f4f8;
@@ -17,7 +17,7 @@
 }
 
 body {
-    font-family: var(--fonte)
+    font-family: var(--fonte);
 }
 
 .container {
@@ -30,7 +30,7 @@ h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
-    color: var(--cor-secundaria)
+    color: var(--cor-secundaria);
 }
 
 header {
@@ -49,11 +49,10 @@ nav {
     padding: 1rem 0;
 }
 
-
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--cor-primaria)
+    color: var(--cor-primaria);
 }
 
 .nav-links {
@@ -93,7 +92,7 @@ section {
 .dev-texto h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    color: var(--cor-primaria)
+    color: var(--cor-primaria);
 }
 
 .dev-texto p {
@@ -139,7 +138,7 @@ section {
     padding: 1.5rem;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 6px  rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: var(--transicao);
 }
 
@@ -183,7 +182,7 @@ section {
 
 .projeto-tags {
     display: flex;
-    flex-wrap:  wrap;
+    flex-wrap: wrap;
     margin-top: 1rem;
 }
 
@@ -222,7 +221,7 @@ input, textarea {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.1);
-    color: white; 
+    color: white;
 }
 
 button {
@@ -231,7 +230,7 @@ button {
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 5px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .titulo-contato {
@@ -259,3 +258,121 @@ footer {
 .fade-in {
     animation: fade 1s ease-out;
 }
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dev {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid, .projetos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 8px;
+    }
+}
+/* Estilos para a seção de contato */
+.contato {
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.contato-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.grupo-formulario {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white; 
+}
+
+button {
+    background-color: var(--cor-auxiliar);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: var(--cor-secundaria);
+}
+
+.titulo-contato {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.contato-icones {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contato-icones a {
+    color: white;
+    font-size: 2rem;
+    transition: var(--transicao);
+    text-decoration: none;
+}
+
+.contato-icones a:hover {
+    color: var(--cor-auxiliar);
+}
+
